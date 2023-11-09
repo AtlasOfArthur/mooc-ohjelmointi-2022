@@ -1,0 +1,261 @@
+course = "mooc-ohjelmointi-2022"
+
+[exercises.osa04-01_hello_visualstudio_code]
+id = 151303
+checksum = "071341991ae7041a3c68194ea0836761"
+
+[exercises.osa04-02_viiva]
+id = 151293
+checksum = "db40278ac7a7d6c10b509f47d908ab38"
+
+[exercises.osa04-02a_risulaatikko]
+id = 151301
+checksum = "62ea582a9e4a04ca49059213478fcccf"
+
+[exercises.osa04-02b_risunelio]
+id = 151302
+checksum = "fd5889b96306e7fd7ce6da4796f0490a"
+
+[exercises.osa04-02c_nelio]
+id = 151307
+checksum = "d389bbea2970f9a98887cc4c792f29a9"
+
+[exercises.osa04-02d_kolmio]
+id = 151285
+checksum = "bfc6d37474ad4ce5b829ff0c6ef058e5"
+
+[exercises.osa04-03_kuvio]
+id = 151292
+checksum = "72a6dd4f4084785b44350af53e2a1414"
+
+[exercises.osa04-04_joulukuusi]
+id = 151289
+checksum = "72fa67da1bc5eaca022dce3ff338747b"
+
+[exercises.osa04-05_luvuista_suurin]
+id = 151282
+checksum = "fdfe489a7e6d5067ce48032235ff52fa"
+
+[exercises.osa04-06_merkit_samat]
+id = 151278
+checksum = "9757e1a7d4113357dac292422c4e1132"
+
+[exercises.osa04-07_eka_toka_vika_sana]
+id = 151296
+checksum = "df9a15b1076660172b14a698fd5684c0"
+
+[exercises.osa04-07a_alkioiden_arvojen_muutokset]
+id = 151298
+checksum = "e167190df26abb1c976961a3366b0702"
+
+[exercises.osa04-07b_alkoiden_lisays_listaan]
+id = 151300
+checksum = "5d8285b93e3df7deea7adf77038c953a"
+
+[exercises.osa04-07c_lisays_ja_poisto]
+id = 151297
+checksum = "01e71fb98f7bff49f2a02fc7472a4858"
+
+[exercises.osa04-08_sama_sana_kahdesti]
+id = 151304
+checksum = "3a4a4e9bb487de205e587d00bbb4b839"
+
+[exercises.osa04-08b_lista_kahdesti]
+id = 151290
+checksum = "9fc1cbf25939addedde1d68766cfdc94"
+
+[exercises.osa04-09_listan_pituus]
+id = 151281
+checksum = "74a328274a732c5dd827f08774a11190"
+
+[exercises.osa04-10_keskiarvo]
+id = 151277
+checksum = "313b75546092be55c522cda45912875c"
+
+[exercises.osa04-11_vaihteluvali]
+id = 151274
+checksum = "a23287fc802bd3c4a6de5994d66995ed"
+
+[exercises.osa04-11a_tulostus_tahdilla]
+id = 151305
+checksum = "a9f2cd91dde6f43c3a2db9ed933a5c97"
+
+[exercises.osa04-11b_negatiivisesta_positiiviseen]
+id = 151308
+checksum = "7fead6fd4d4644a3165b99faebc16f9d"
+
+[exercises.osa04-12_tahdet]
+id = 151291
+checksum = "d19eecbd4812e3bb34610f6dfe2c2170"
+
+[exercises.osa04-13_anagrammi]
+id = 151280
+checksum = "760ac8496056b52122cf1f51a2b86d10"
+
+[exercises.osa04-14_palindromit]
+id = 151306
+checksum = "9a25d3783273b850c0e1208c3fddf904"
+
+[exercises.osa04-15_positiivisten_summa]
+id = 151286
+checksum = "4690a5363fb0c752809d02f9cf437444"
+
+[exercises.osa04-16_parilliset]
+id = 151283
+checksum = "6b58558a99a6bba242b3e9bf99474f38"
+
+[exercises.osa04-17_summalista]
+id = 151284
+checksum = "4955c1021777b50e3a896a19d12ce6cb"
+
+[exercises.osa04-18_uniikit]
+id = 151294
+checksum = "9c9493979089a44f24d393f3078543af"
+
+[exercises.osa04-18a_listan_pimman_pituus]
+id = 151279
+checksum = "7010441bed334e342b57a5478393ba38"
+
+[exercises.osa04-18b_listan_lyhin]
+id = 151288
+checksum = "50828129a230e289d7d32dd4ef0754f2"
+
+[exercises.osa04-19_listan_pisimmat]
+id = 151273
+checksum = "1eca87c48e0abc287fd5d443b7d8ee05"
+
+[exercises.osa04-20_lukulistasta_merkkijonolistaksi]
+id = 151275
+checksum = "5ab5df037b312d9ce2e1939cfc2c20fd"
+
+[exercises.osa04-21_kaikki_vaarinpain]
+id = 151310
+checksum = "a50274b288c8fd0f1b7825b819bdf036"
+
+[exercises.osa04-22_eniten_kirjaimia]
+id = 151287
+checksum = "d1264e2158e02e6b129ad11b6ee5ec5e"
+
+[exercises.osa04-23_vokaalit_pois]
+id = 151276
+checksum = "76842306bade77a87ee9562015d6e8d0"
+
+[exercises.osa04-24_poista_isot]
+id = 151309
+checksum = "77be3f9f1ab7be4d05e9741ee2ab83d4"
+
+[exercises.osa04-25_naapureita_listassa]
+id = 151299
+checksum = "69e28f2bbe72c8b995a40f5b0cb49e1a"
+
+[exercises.osa04-26_arvosanatilasto]
+id = 151295
+checksum = "e7d38aa670986db6a3ff054ea011bd35"
+
+[exercises.osa05-01_alkoiden_maara]
+id = 151389
+checksum = "7583e47b6b255e2e93de1dc6cfbd0313"
+
+[exercises.osa05-01a_pisin_merkkijono]
+id = 151396
+checksum = "ca70498c33c80636c529769d3e6928f4"
+
+[exercises.osa05-02_go]
+id = 151403
+checksum = "61512729d4bf3a9a554cd6cde127dd15"
+
+[exercises.osa05-03_sudoku_osa1]
+id = 151395
+checksum = "a252442fc6da15ca28605fb8f8d411ad"
+
+[exercises.osa05-04_sudoku_osa2]
+id = 151405
+checksum = "1020a969b5abbd5764263b62830797a8"
+
+[exercises.osa05-05_sudoku_osa3]
+id = 151406
+checksum = "3d829e1cc86bec7f65ddb8b27f19acbf"
+
+[exercises.osa05-06_sudoku_osa4]
+id = 151384
+checksum = "d26c5a9e0b59ef046e38b532ba78e5e4"
+
+[exercises.osa05-06a_alkiot_tuplana]
+id = 151388
+checksum = "4d91a97e835e604e0526134b9c612c64"
+
+[exercises.osa05-06b_poista_pienin]
+id = 151394
+checksum = "b5b74c9b42e911e96d27a94334e7e82d"
+
+[exercises.osa05-07_sudoku_osa5]
+id = 151381
+checksum = "cabdfddb0ae40e9a9129d9d7c80e9fba"
+
+[exercises.osa05-08_sudoku_osa6]
+id = 151393
+checksum = "9c0b36a6758e67828f417985b63109d8"
+
+[exercises.osa05-09_ristinolla]
+id = 151398
+checksum = "02392bfedc6cb8ecd86a24e939371a75"
+
+[exercises.osa05-10_matriisin_kaanto]
+id = 151386
+checksum = "8d8cd450006cf7c4165704f6794988f3"
+
+[exercises.osa05-10b_kertaa_kymmenen]
+id = 151387
+checksum = "0f6fbdc91e47fe097204850e889cdad0"
+
+[exercises.osa05-11_kertomat]
+id = 151391
+checksum = "1b65f826d0fca98ebabdf745d40d3761"
+
+[exercises.osa05-12_histogrammi]
+id = 151380
+checksum = "221a981dc871dba742fa897101eb7dea"
+
+[exercises.osa05-13_puhelinluettelo_versio1]
+id = 151383
+checksum = "6c2caff155393c3a319f72094da14004"
+
+[exercises.osa05-14_puhelinluettelo_versio2]
+id = 151397
+checksum = "f86c212df2cabe321e404c6943d18a8b"
+
+[exercises.osa05-15_sanakirjan_kaanto]
+id = 151390
+checksum = "4a8c762669f0ea6e16641cb37d975ece"
+
+[exercises.osa05-16_luvut_sanoina]
+id = 151399
+checksum = "5b70da5fb90a9c73250c68a3d5601900"
+
+[exercises.osa05-17_elokuvarekisteri]
+id = 151400
+checksum = "38d82fec2302b4fac10521f0ff3ce726"
+
+[exercises.osa05-17b_etsi_elokuvat]
+id = 151401
+checksum = "02968adf5f84a33d7754f605c9e7415b"
+
+[exercises.osa05-17c_muodosta_tuple]
+id = 151385
+checksum = "b30ff5891ed3fbfc780872a8104e6601"
+
+[exercises.osa05-18_vanhin_henkiloista]
+id = 151382
+checksum = "ec61a4875c353adf4ed892a6844b3d05"
+
+[exercises.osa05-19_vanhemmat_henkilot]
+id = 151404
+checksum = "2035572b0546d44754e4cbc70c7b193d"
+
+[exercises.osa05-20_opiskelijarekisteri]
+id = 151392
+checksum = "7e1d81a2b9fba8d6fc834a04b62284ca"
+
+[exercises.osa05-21_kirjainruudukko]
+id = 151402
+checksum = "fd8b9d7b765c05acbb5789dd984b9205"
