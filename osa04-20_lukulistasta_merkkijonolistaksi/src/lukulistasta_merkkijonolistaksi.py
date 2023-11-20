@@ -1,6 +1,6 @@
 # tee ratkaisu tänne
 def muotoile(liukuluvut):
-    muotoillut = [f'{luku:.2f}' for luku in liukuluvut]
+    muotoillut = [f'{luku:.2f}' for luku in liukuluvut] # for in muuttujan sisällä määriteltynä.
     return muotoillut
 
 # Malli vastaus
