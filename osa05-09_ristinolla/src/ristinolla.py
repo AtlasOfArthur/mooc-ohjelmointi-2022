@@ -19,7 +19,7 @@ def pelaa_siirto(lauta: list, x: int, y: int, nappula: str):
         lauta[y][x] = nappula
         return True
  
-    return FalseS
+    return False
 
 '''
 
