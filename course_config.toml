@@ -259,3 +259,79 @@ checksum = "7e1d81a2b9fba8d6fc834a04b62284ca"
 [exercises.osa05-21_kirjainruudukko]
 id = 151402
 checksum = "fd8b9d7b765c05acbb5789dd984b9205"
+
+[exercises.osa06-01_suurin_luku]
+id = 151525
+checksum = "60fe886902618b5d43299260e8163af7"
+
+[exercises.osa06-02_hedelmakauppa]
+id = 151526
+checksum = "dd3e733cf99a376cf86c95866c78088c"
+
+[exercises.osa06-03_matriisi]
+id = 151529
+checksum = "2195f6a65cdd44431523c9b8443f53b0"
+
+[exercises.osa06-04_kurssin_tulokset_osa1]
+id = 151534
+checksum = "be31bc4e3b4202dee4489366241cbba9"
+
+[exercises.osa06-05_kurssin_tulokset_osa2]
+id = 151533
+checksum = "59b9fc2614e1826f792ecc870aa6141e"
+
+[exercises.osa06-06_kurssin_tulokset_osa3]
+id = 151536
+checksum = "e9876b6fad8be8b61cee275b011fc4e9"
+
+[exercises.osa06-07_spellchecker]
+id = 151538
+checksum = "209103358ce5b6bc2bf8e847b671f53e"
+
+[exercises.osa06-08_reseptihaku]
+id = 151537
+checksum = "55ddcc6bc2c4a0a396ba9e10ec5de04b"
+
+[exercises.osa06-09_kaupunkipyorat]
+id = 151523
+checksum = "bca377ce04339d49a7c28d9c3a5a87cd"
+
+[exercises.osa06-10_omistuskirjoitus]
+id = 151528
+checksum = "cea5087ae9181f50ee3dfa40e555156c"
+
+[exercises.osa06-11_paivakirja]
+id = 151527
+checksum = "e91584de627e5b2d7b496865cce084e5"
+
+[exercises.osa06-12_aineiston_suodatus]
+id = 151522
+checksum = "07cb270e9b53e94996b69fe26bbb04cf"
+
+[exercises.osa06-13_henkilot_talteen]
+id = 151539
+checksum = "de54f2b9f01e066a508f814ff098183c"
+
+[exercises.osa06-14_kurssin_tulokset_osa4]
+id = 151532
+checksum = "3dfb5efcea0c547b7b84aca58d27b327"
+
+[exercises.osa06-15_sanahaku]
+id = 151521
+checksum = "3cc21ac00092b354d821255d1c1f8d26"
+
+[exercises.osa06-16_muistava_sanakirja]
+id = 151530
+checksum = "8bf7d5a86648ab85d0a012b9116dc4a5"
+
+[exercises.osa06-17_syotteen_luku]
+id = 151524
+checksum = "145a215276610a0a46483ae21c7d2c74"
+
+[exercises.osa06-18_parametrien_validointi]
+id = 151531
+checksum = "69e92ff19eeb74aac527a8efb3ff2a5e"
+
+[exercises.osa06-19_virheelliset_lottonumerot]
+id = 151535
+checksum = "69713472efe702a250989b1fd5648ca4"
