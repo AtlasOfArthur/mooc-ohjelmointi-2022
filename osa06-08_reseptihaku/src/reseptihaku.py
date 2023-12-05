@@ -1,56 +1,48 @@
 # Tehdään kaksiulotteinen lista tiedoston sisällöstä
 
 def tiedosto_to_list():
-    # Avataan tiedosto ja luetaan sisältö
-    with open('reseptit1.txt', 'r') as file:
+    try: # Laitetaan try blockiin koko ohjelma virheiden varalta
+        with open('reseptit1.txt', 'r') as file: # Avataan tiedosto ja luetaan sisältö
+            resepti_lista = [] # Alustetaan tyhjä lista resepteille
+            alilista = [] # Alusta tyhjä alilista, johon lisätään kukin resepti
 
-        # Alustetaan tyhjä lista resepteille
-        resepti_lista = []
-        # Alusta tyhjä alilista, johon lisätään kukin resepti
-        alilista = []
+            
+            for line in file: # Käy tiedosto rivi kerrallaan läpi
+                line = line.strip() # Poista rivinvaihto merkki
 
-        # Käy tiedosto rivi kerrallaan läpi
-        for line in file:
-            # Poista rivinvaihto merkki
-            line = line.strip()
+                
+                if not line: # Jos rivi on tyhjä, lisää alilista resepti_listaan ja alusta uusi alilista
+                    resepti_lista.append(alilista)
+                    alilista = [] # Eli siis, kun ylempänä alilista on lisätty resepti_listaan, 'tyhjennetään' alustamalla alilista muuttuja
+                else:
+                    alilista.append(line) # Muussa tapauksessa lisää rivin osat alilistaan
 
-            # Jos rivi on tyhjä, lisää alilista resepti_listaan ja alusta uusi alilista
-            if not line:
-                resepti_lista.append(alilista)
-                alilista = []
-            else:
-                # Muussa tapauksessa lisää rivin osat alilistaan
-                alilista.append(line)
+        
+        # resepti_lista tulostus poistettu, koska testaus tapahtuu nyt alhaalla (Tämä tarkoittaa, että toimii tähän asti)
+        return resepti_lista # palautetaan resepti_lista käyttöä varten
 
-    # Tulosta lopullinen resepti_lista
-    print(resepti_lista)
-    return resepti_lista
-
-
+    except FileNotFoundError:
+        print(f"Tiedostoa 'reseptit1.txt' ei löytynyt.")
+        return None
+    except Exception as e:
+        print(f"Virhe tiedoston 'reseptit1.txt' käsittelyssä: {e}")
+        return None
 
 
-'''
 # Reseptin haku nimen perusteella
 def hae_nimi(tiedosto: str, sana: str):
-    loydetyt_nimi = []
+    reseptit = tiedosto_to_list() # Tässä haetaan meidän lista ja tallennetaan se muuttujaan reseptit
+    loydetyt_nimi = []            # Tämä osoittautuikin paljon järkevämmäksi ratkaisuksi kuin edellinen
 
-    try:
-        with open(tiedosto, encoding='utf-8') as reseptitiedosto:
-            for rivi in reseptitiedosto:
-                if sana.lower() in rivi.lower():
-                    loydetyt_nimi.append(rivi.strip())
+    for resepti in reseptit:
+        for rivi in resepti:
+            if sana.lower() in rivi.lower():
+                loydetyt_nimi.append(rivi.strip())
 
         return loydetyt_nimi
 
-    except FileNotFoundError:
-        print(f"Tiedostoa '{tiedosto}'  ei löytynyt.")
-        return None
-    except Exception as e:
-        print(f"Virhe tiedoston '{tiedosto}' käsittelyssä: {e}")
-        return None
 
-
-
+'''
 # Reseptin haku aika perusteella
 def hae_aika(tiedosto: str, aika: int):
     loydetyt_aika = []
@@ -87,20 +79,12 @@ def hae_aika(tiedosto: str, aika: int):
 
 if __name__ == "__main__":
     tiedosto_to_list()
-
-'''
-    reseptit = lue_resptit("reseptit1.txt")
-
-    for resepti in reseptit:
-        print(resepti)
-
-        
-
+   
     loydetyt_nimi = hae_nimi("reseptit1.txt", "pulla")
 
     for resepti in loydetyt_nimi:
         print(resepti)
-
+'''
     loydetyt_aika = hae_aika("reseptit1.txt", 50)
 
     for resepti in loydetyt_aika:
