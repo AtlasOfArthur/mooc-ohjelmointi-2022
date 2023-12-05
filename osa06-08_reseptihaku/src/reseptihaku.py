@@ -17,6 +17,7 @@ def tiedosto_to_list():
                 else:
                     alilista.append(line) # Muussa tapauksessa lisää rivin osat alilistaan
 
+            resepti_lista.append(alilista)  # Lisätään viimeinen resepti listaan (Jos vaikka korjaisi vian) Yksi resepti puuttui.
         
         # resepti_lista tulostus poistettu, koska testaus tapahtuu nyt alhaalla (Tämä tarkoittaa, että toimii tähän asti)
         return resepti_lista # palautetaan resepti_lista käyttöä varten
@@ -39,7 +40,7 @@ def hae_nimi(tiedosto: str, sana: str):
             if sana.lower() in rivi.lower():
                 loydetyt_nimi.append(rivi.strip())
 
-        return loydetyt_nimi
+    return loydetyt_nimi
 
 
 '''
@@ -78,7 +79,7 @@ def hae_aika(tiedosto: str, aika: int):
 
 
 if __name__ == "__main__":
-    tiedosto_to_list()
+    print(tiedosto_to_list()) # Print oli unohtunut. Ei näy konsolissa ilman sitä 
    
     loydetyt_nimi = hae_nimi("reseptit1.txt", "pulla")
 
