@@ -30,70 +30,80 @@ def tiedosto_to_list():
         return None
 
 
-# Reseptin haku nimen perusteella
+
+# Nimi perusteinen
+
 def hae_nimi(tiedosto: str, sana: str):
     reseptit = tiedosto_to_list() # Tässä haetaan meidän lista ja tallennetaan se muuttujaan reseptit
     loydetyt_nimi = []            # Tämä osoittautuikin paljon järkevämmäksi ratkaisuksi kuin edellinen
 
     for resepti in reseptit:
-        for rivi in resepti:
-            if sana.lower() in rivi.lower():
-                loydetyt_nimi.append(rivi.strip())
+        nimi = resepti[0].lower()  # Haetaan reseptin nimi ja muutetaan pieniksi kirjaimiksi
+        if sana.lower() in nimi: # Tarkastetaan, onko sana löytynyt reseptin nimestä
+            loydetyt_nimi.append(nimi.strip())
 
     return loydetyt_nimi
 
 
-'''
-# Reseptin haku aika perusteella
+
+# Aika perusteinen
+
 def hae_aika(tiedosto: str, aika: int):
-    loydetyt_aika = []
+    reseptit = tiedosto_to_list()
+    loydetyt_reseptit = []
 
-    try:
-        with open(tiedosto) as reseptitiedosto:
-            while True:
-                resepti_nimi = reseptitiedosto.readline().strip()
-                if not resepti_nimi:  # Tarkista, onko rivi tyhjä (reseptin loppu)
-                    break
+    for resepti in reseptit:
+      #  print("Alkuperäinen resepti:", resepti)  # Tulosta alkuperäinen resepti
 
-                valmistusaika_rivi = reseptitiedosto.readline().strip()
-                # Tarkista, onko valmistusaika_rivi kelvollinen kokonaisluku
-                try:
-                    valmistusaika = int(valmistusaika_rivi)  # Muunnetaan valmistusaika kokonaisluvuksi
-                except ValueError:
-                    # Jos ei ole kelvollinen, siirry seuraavaan reseptiin
-                    continue
+        # Muunnetaan valmistusajat suoraan int-muotoon
+        valmistusaika_list = [int(valmistusaika) for valmistusaika in resepti[1].split(', ')]
+       # print("Valmistusajat (kokonaisluvut):", valmistusaika_list)  # Tulostaa valmistusajat kokonaislukuina (int)
 
-                if valmistusaika <= aika:
-                    loydetyt_aika.append(f"{resepti_nimi}, valmistusaika {valmistusaika} min")
+        for valmistusaika_int in valmistusaika_list:
+         #   print("Käsitelty valmistusaika:", valmistusaika_int)
 
-        return loydetyt_aika
+            if valmistusaika_int <= aika:
+                nimi = resepti[0]
+                valmistusaineet = ", ".join(resepti[2:])  # Ainesosat erotetaan pilkulla toisistaan
+                loydetyt_reseptit.append(f"{nimi}, valmistusaika {valmistusaika_int} min")
+              #  print("Lisätty löydettyjen reseptien listaan:", f"{nimi}, valmistusaika {valmistusaika_int} min")
+            else:
+                pass # Valmistusaika ei täyttänyt kriteerejä, ei lisätä löydettyjen reseptien listaan
 
-    except FileNotFoundError:
-        print(f"Tiedostoa '{tiedosto}'  ei löytynyt.")
-        return None
-    except Exception as e:
-        print(f"Virhe tiedoston '{tiedosto}' käsittelyssä: {e}")
-        return None
-'''
+    return loydetyt_reseptit
 
 
 
 if __name__ == "__main__":
+# Tarkistan että tiedostosta luotu lista tulostuu oikein
     print(tiedosto_to_list()) # Print oli unohtunut. Ei näy konsolissa ilman sitä 
-   
-    loydetyt_nimi = hae_nimi("reseptit1.txt", "pulla")
+
+
+# Nimi perusteinen   
+    loydetyt_nimi = hae_nimi("reseptit1.txt", "tofu")
 
     for resepti in loydetyt_nimi:
-        print(resepti)
-'''
+        print(resepti)  # Tulostaa nimen perusteella löydetyt reseptit (pulla)
+
+
+# Aika perusteinen
+    loydetyt = hae_aika("reseptit1.txt", 50) # Arvolla 50 tulostuu 3 reseptiä ja niiden ajat
+
+    for resepti in loydetyt:
+        print(resepti)  # Tulostaa haetut reseptit aikaperusteella
+
+
+
+
+    '''
     loydetyt_aika = hae_aika("reseptit1.txt", 50)
 
     for resepti in loydetyt_aika:
         print(resepti)
 
-[[Lettutaikina 15, maito, kananmuna, jauho, sokeri, suola, voi],
-[Lihapullat, 45, jauheliha, kananmuna, korppujauho],
-[Tofurullat, 30, tofu, riisi, vesi, porkkana, kurkku, avokado, wasabi],
-[Pullataikina, 60, maito, hiiva, kananmuna, suola, sokeri, kaardemumma, voi]]
+    [[Lettutaikina 15, maito, kananmuna, jauho, sokeri, suola, voi],
+    [Lihapullat, 45, jauheliha, kananmuna, korppujauho],
+    [Tofurullat, 30, tofu, riisi, vesi, porkkana, kurkku, avokado, wasabi],
+    [Pullataikina, 60, maito, hiiva, kananmuna, suola, sokeri, kaardemumma, voi]]
 
-'''
+    '''
